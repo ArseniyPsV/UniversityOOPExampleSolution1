@@ -33,6 +33,9 @@ void Group::remove(int index) {
 				j++;
 			}
 		}
+
+		delete[] list;
+		list = temp;
 	}
 }
 
