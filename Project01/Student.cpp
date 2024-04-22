@@ -42,7 +42,7 @@ Student::Student(string name, int age, double mark)
 
 // destructor
 Student::~Student() {
-	cout << "destructor was calling" << endl;
+	//cout << "destructor was calling" << endl;
 	count--;
 }
 

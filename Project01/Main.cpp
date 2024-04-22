@@ -1,25 +1,19 @@
 #include <iostream>
 #include "Manager.h"
 
-void test() {
-	Student st1{ "Alex", 14, 10 };
-	Student st2{ "Alex", 14, 10 };
-	Student st3{ "Alex", 14, 10 };
-	Student st4{ "Alex", 14, 10 };
-
-	cout << Student::getCount() << endl;
-}
-
 int main() {
 
-	{
-		Student st1{ "Alex", 14, 10 };
-	}
-
-	Student st2{ "Alex", 14, 10 };
-	Student st3{ "Alex" };
-
-	test();
+	Group groupA;
 	
+	Student st1{ "Alex", 14, 10 };
+	Student st2{ "Peter", 16, 9 };
+	Student st3{ "Alice", 6, 4 };
+
+	groupA.add(st1);
+	groupA.add(st2);
+	groupA.add(st3);
+
+	cout << groupA.convertToString() << endl;
+
 	return 0;
 }
