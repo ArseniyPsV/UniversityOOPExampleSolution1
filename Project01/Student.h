@@ -1,5 +1,4 @@
-﻿#pragma once
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 using namespace std;
 
@@ -11,7 +10,7 @@ private:
 
 	static int count;
 
-public:	
+public:
 
 	static const int MAX_MARK = 10;
 	static const int MIN_MARK = 0;
@@ -22,11 +21,11 @@ public:
 	Student();
 	Student(string, int, double);
 	Student(string);
-	
+
 	~Student();
 
 	string getName();
-	
+
 	int getAge();
 	void setAge(int);
 

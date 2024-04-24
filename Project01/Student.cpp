@@ -9,7 +9,7 @@ int Student::getCount() {
 
 // dynamic class components
 
-// default constructor (конструктор по умолчанию)
+// default constructor 
 Student::Student() : Student("no_name", 6, 4) {
 	//cout << "default constructor was calling" << endl;
 	/*name = "no name";
@@ -17,7 +17,7 @@ Student::Student() : Student("no_name", 6, 4) {
 	mark = 4;*/
 }
 
-Student::Student(string name) : name(name) {
+Student::Student(string name) : name(name), age(6), mark(4) {
 	//cout << "constructor with arguments was calling" << endl;
 	count++;
 }
@@ -28,14 +28,14 @@ Student::Student(string name) : name(name) {
 //	this->age = age;
 //}
 
-// canonical constructor (канонический конструктор)
-Student::Student(string name, int age, double mark) 
+// canonical constructor
+Student::Student(string name, int age, double mark)
 	: name(name), age(age), mark(mark) {
 	count++;
 	//cout << "canonical constructor with arguments was calling" << endl;	
 }
 
-//// copy-constructor (конструктор копирования)
+//// copy-constructor 
 //Student(const Student& student) {
 
 //}
@@ -59,7 +59,7 @@ int Student::getAge() {
 }
 
 void Student::setAge(int age) {
-	if (age > MIN_AGE && MAX_AGE < 100) {
+	if (age > MIN_AGE && age < MAX_AGE) {
 		this->age = age;
 	}
 }
