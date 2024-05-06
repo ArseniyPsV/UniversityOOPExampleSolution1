@@ -5,7 +5,7 @@ using namespace std;
 
 class Human
 {
-private:
+protected:
 	string name;
 	int age;
 
@@ -14,7 +14,7 @@ public:
 		cout << "Human default constructor" << endl;
 	}
 
-	Human(string name, int age, double salary) :
+	Human(string name, int age) :
 		name(name), age(age) {}
 
 	~Human() {
@@ -26,6 +26,16 @@ public:
 	int getAge();
 	void setAge(int age);
 
+	Human& operator+(int value) {
+		Human h(name, age + value);
+		return h;
+	}
+
+	Human& operator+(Human& human) {
+		Human h(name + "-" + human.name,
+			age + human.age);
+		return h;
+	}
+
 	string getInfo();
 };
-
