@@ -1,20 +1,35 @@
 #pragma once
 class Integer
 {
-public:
-	int value;
 private:
+	int value;
+public:
 	Integer() :value(0) {}
 	Integer(int value) :value(value) {}
 
-	Integer add(Integer a);
-	Integer sub(Integer a);
-	Integer mul(Integer a);
-	Integer div(Integer a);
-	Integer mod(Integer a);
+	Integer sum(Integer integer);
+	Integer sub(Integer integer);
+	Integer mul(Integer integer);
+	Integer div(Integer integer);
+	Integer mod(Integer integer);
 	Integer pow(int n);
 	Integer opp();
 
-	int getValue();
-	void setValue(int value);
+	Integer operator+(Integer integer) {
+		int v = value + integer.value;
+		return Integer(v);
+	};
+
+	Integer operator+(Integer number) {
+		int v = value + number;
+		return Integer(v);
+	};
+
+	int getValue() {
+		return value;
+	}
+
+	void setValue(int value) {
+		this->value = value;
+	}
 };

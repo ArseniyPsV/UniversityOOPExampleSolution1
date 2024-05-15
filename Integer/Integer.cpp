@@ -1,24 +1,25 @@
 #include "Integer.h"
 
-Integer Integer::add(Integer a) {
-	return Integer{ value + a.getValue() };
+Integer Integer::sum(Integer integer) {
+	int v = value + integer.value;
+	return Integer(v);
 };
 
-Integer Integer::sub(Integer a) {
-	return Integer{ value - a.getValue() };
-	
+Integer Integer::sub(Integer integer) {
+	return Integer{ value - integer.getValue() };
+
 };
 
-Integer Integer::mul(Integer a) {
-	return Integer{ value * a.getValue() };
+Integer Integer::mul(Integer integer) {
+	return Integer{ value * integer.getValue() };
 };
 
-Integer Integer::div(Integer a) {
-	return Integer{ value / a.getValue() };
+Integer Integer::div(Integer integer) {
+	return Integer{ value / integer.getValue() };
 };
 
-Integer Integer::mod(Integer a) {
-	return Integer{ value % a.getValue() };
+Integer Integer::mod(Integer integer) {
+	return Integer{ value % integer.getValue() };
 };
 
 Integer Integer::pow(int n) {
@@ -32,4 +33,8 @@ Integer Integer::pow(int n) {
 
 Integer Integer::opp() {
 	return Integer(-value);
+};
+
+Integer operator+(Integer integer1, Integer integer2) {
+	return Integer(integer1.getValue() + integer2.getValue());
 };
