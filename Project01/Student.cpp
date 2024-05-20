@@ -28,7 +28,7 @@ Student::Student(string name) : name(name), age(6), mark(4) {
 //	this->age = age;
 //}
 
-// canonical constructor
+// canonical constructor 
 Student::Student(string name, int age, double mark)
 	: name(name), age(age), mark(mark) {
 	count++;

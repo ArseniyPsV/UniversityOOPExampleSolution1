@@ -4,26 +4,8 @@ class Integer
 private:
 	int value;
 public:
-	Integer() :value(0) {}
-	Integer(int value) :value(value) {}
-
-	Integer sum(Integer integer);
-	Integer sub(Integer integer);
-	Integer mul(Integer integer);
-	Integer div(Integer integer);
-	Integer mod(Integer integer);
-	Integer pow(int n);
-	Integer opp();
-
-	Integer operator+(Integer integer) {
-		int v = value + integer.value;
-		return Integer(v);
-	};
-
-	Integer operator+(Integer number) {
-		int v = value + number;
-		return Integer(v);
-	};
+	Integer() : value(0) {}
+	Integer(int value) : value(value) {}
 
 	int getValue() {
 		return value;
@@ -32,4 +14,24 @@ public:
 	void setValue(int value) {
 		this->value = value;
 	}
+
+	Integer sum(Integer integer) {
+		int v = value + integer.value;
+		return Integer(v);
+	}
+
+
+	//Integer operator+(Integer integer) {
+	//	return Integer(value + integer.getValue());
+	//}
+
+	//Integer operator-() {
+	//	return Integer(-value);
+	//}
+
+	/*Integer sum(int number) {
+		int v = value + number;
+		return Integer(v);
+	}*/
+
 };
