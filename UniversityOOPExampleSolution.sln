@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntegerProject", "Integer\I
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TransportProject", "TransportBot\TransportBot.vcxproj", "{567F310C-9767-45D0-BBA2-20CD8454FF7B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsProject", "GraphicsProject\GraphicsProject.vcxproj", "{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{567F310C-9767-45D0-BBA2-20CD8454FF7B}.Release|x64.Build.0 = Release|x64
 		{567F310C-9767-45D0-BBA2-20CD8454FF7B}.Release|x86.ActiveCfg = Release|Win32
 		{567F310C-9767-45D0-BBA2-20CD8454FF7B}.Release|x86.Build.0 = Release|Win32
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Debug|x64.ActiveCfg = Debug|x64
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Debug|x64.Build.0 = Debug|x64
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Debug|x86.ActiveCfg = Debug|Win32
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Debug|x86.Build.0 = Debug|Win32
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Release|x64.ActiveCfg = Release|x64
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Release|x64.Build.0 = Release|x64
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Release|x86.ActiveCfg = Release|Win32
+		{8D1DB74F-175A-42CA-BD05-A41392DA9F3C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
