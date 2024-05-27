@@ -3,12 +3,19 @@
 
 class Rectangle : public Figure
 {
-public:
+private:
 	double a;
 	double b;
+public:
 
-	Rectangle() : a(1), b(1) {}
-	Rectangle(int a, int b) : a(a), b(b) {}
+	Rectangle() : Figure(), a(1), b(1) {}
+	Rectangle(double a, double b, int x, int y)
+		:Figure(x, y), a(a), b(b) {}
+
+	double getA();
+	double getB();
+	void setA(double a);
+	void setB(double b);
 
 	double perimeter() override;
 	double square() override;
